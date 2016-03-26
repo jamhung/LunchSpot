@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		129429A674CBAC3EA2C62442 /* Pods_LunchSpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7D882792886F2AD9E96F94 /* Pods_LunchSpot.framework */; };
+		7F0466711C8BBDE900BAED71 /* FindLunchSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04666F1C8BBDE900BAED71 /* FindLunchSpotViewController.swift */; };
+		7F0466721C8BBDE900BAED71 /* FindLunchSpotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F0466701C8BBDE900BAED71 /* FindLunchSpotViewController.xib */; };
+		7F0466751C8C89BD00BAED71 /* FindLunchSpotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0466741C8C89BD00BAED71 /* FindLunchSpotViewModel.swift */; };
+		7F04667D1C8C93E300BAED71 /* KMSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0466781C8C93E300BAED71 /* KMSwizzle.m */; };
+		7F04667E1C8C93E300BAED71 /* UINavigationController+KMNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F04667A1C8C93E300BAED71 /* UINavigationController+KMNavigationBarTransition.m */; };
+		7F04667F1C8C93E300BAED71 /* UIViewController+KMNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F04667C1C8C93E300BAED71 /* UIViewController+KMNavigationBarTransition.m */; };
+		7F2A212E1C914B5200A8D0EC /* UIColor+DetermineBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A212D1C914B5200A8D0EC /* UIColor+DetermineBrightness.m */; };
+		7F2A21301C9155F300A8D0EC /* FindLunchSpotWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A212F1C9155F300A8D0EC /* FindLunchSpotWireframe.swift */; };
+		7F2A21321C91D32B00A8D0EC /* LunchDetailsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A21311C91D32B00A8D0EC /* LunchDetailsWireframe.swift */; };
+		7F2A21341C91D49400A8D0EC /* LunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A21331C91D49400A8D0EC /* LunchDetailsViewModel.swift */; };
+		7F2BCBA21CA3AA43001D5A76 /* LSCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2BCBA11CA3AA43001D5A76 /* LSCache.swift */; };
+		7F3565CA1C949EAB00B0081C /* ChangeLocationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3565C91C949EAB00B0081C /* ChangeLocationWireframe.swift */; };
+		7F3565CE1C949F5300B0081C /* ChangeLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3565CD1C949F5300B0081C /* ChangeLocationViewModel.swift */; };
+		7F3565D11C96180500B0081C /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3565CF1C96180500B0081C /* LocationTableViewCell.swift */; };
+		7F3565D21C96180500B0081C /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3565D01C96180500B0081C /* LocationTableViewCell.xib */; };
+		7F360B2F1C9F5531008096BD /* FindLunchSpotViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F360B2E1C9F5531008096BD /* FindLunchSpotViewModelSpec.swift */; };
+		7F360B331C9F8158008096BD /* LunchDetailsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F360B321C9F8158008096BD /* LunchDetailsViewModelSpec.swift */; };
+		7F7190831C9A64EE00871D71 /* LSLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7190821C9A64EE00871D71 /* LSLaunchScreen.swift */; };
+		7F7190851C9A650100871D71 /* LSLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7190841C9A650100871D71 /* LSLaunchScreen.xib */; };
+		7F7A62D01C744F0B008DC162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A62CF1C744F0B008DC162 /* AppDelegate.swift */; };
+		7F7A62D71C744F0B008DC162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7A62D61C744F0B008DC162 /* Assets.xcassets */; };
+		7F7A62DA1C744F0B008DC162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7A62D81C744F0B008DC162 /* LaunchScreen.storyboard */; };
+		7F908F5D1C8EBFC50071BD61 /* TipsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F908F5C1C8EBFC50071BD61 /* TipsHeaderView.swift */; };
+		7F908F5F1C8EBFD30071BD61 /* TipsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F908F5E1C8EBFD30071BD61 /* TipsHeaderView.xib */; };
+		7F929EFF1C967FB7008F689A /* PhotoSetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F929EFD1C967FB7008F689A /* PhotoSetTableViewCell.swift */; };
+		7F929F001C967FB7008F689A /* PhotoSetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F929EFE1C967FB7008F689A /* PhotoSetTableViewCell.xib */; };
+		7F929F031C968489008F689A /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F929F011C968489008F689A /* ThumbnailCollectionViewCell.swift */; };
+		7F929F041C968489008F689A /* ThumbnailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F929F021C968489008F689A /* ThumbnailCollectionViewCell.xib */; };
+		7F929F081C969698008F689A /* ThumbnailPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F929F071C969698008F689A /* ThumbnailPhoto.swift */; };
+		7F9752871CA746CB006B135A /* UIImage+AvatarPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9752861CA746CB006B135A /* UIImage+AvatarPlaceholder.m */; };
+		7F9752891CA746DF006B135A /* ChangeLocationViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9752881CA746DF006B135A /* ChangeLocationViewModelSpec.swift */; };
+		7FBB99741C84268E00515D71 /* LunchDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBB99731C84268E00515D71 /* LunchDetailsHeaderView.swift */; };
+		7FBB99781C842A1800515D71 /* LunchDetailsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FBB99771C842A1800515D71 /* LunchDetailsHeaderView.xib */; };
+		7FBB997B1C8434D400515D71 /* TipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBB99791C8434D400515D71 /* TipTableViewCell.swift */; };
+		7FBB997C1C8434D400515D71 /* TipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FBB997A1C8434D400515D71 /* TipTableViewCell.xib */; };
+		7FBB997F1C856B8200515D71 /* ChangeLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBB997D1C856B8200515D71 /* ChangeLocationViewController.swift */; };
+		7FBB99801C856B8200515D71 /* ChangeLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FBB997E1C856B8200515D71 /* ChangeLocationViewController.xib */; };
+		7FBB998B1C857AEA00515D71 /* LunchMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBB99891C857AEA00515D71 /* LunchMenuViewController.swift */; };
+		7FBB998C1C857AEA00515D71 /* LunchMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FBB998A1C857AEA00515D71 /* LunchMenuViewController.xib */; };
+		7FBB99911C85807800515D71 /* LunchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBB998F1C85807800515D71 /* LunchMapViewController.swift */; };
+		7FBB99921C85807800515D71 /* LunchMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FBB99901C85807800515D71 /* LunchMapViewController.xib */; };
+		7FD692A91C7C43EF00852813 /* LunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD692A71C7C43EF00852813 /* LunchDetailsViewController.swift */; };
+		7FD692AA1C7C43EF00852813 /* LunchDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD692A81C7C43EF00852813 /* LunchDetailsViewController.xib */; };
+		7FFCBB941C793FF5007F9CD7 /* LSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCBB931C793FF5007F9CD7 /* LSLocationManager.swift */; };
+		7FFCBB961C7A735B007F9CD7 /* LSFourSquareAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCBB951C7A735B007F9CD7 /* LSFourSquareAPIService.swift */; };
+		9EC821C76B2B2C15ACE2F32E /* Pods_LunchSpotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CB8B6BE2805AAB92E0A6BA /* Pods_LunchSpotTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F360B291C9F359F008096BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F7A62C41C744F0B008DC162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F7A62CB1C744F0B008DC162;
+			remoteInfo = LunchSpot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28C994E56007A9BB6EBA0423 /* Pods-LunchSpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchSpot.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchSpot/Pods-LunchSpot.release.xcconfig"; sourceTree = "<group>"; };
+		7F04666F1C8BBDE900BAED71 /* FindLunchSpotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindLunchSpotViewController.swift; sourceTree = "<group>"; };
+		7F0466701C8BBDE900BAED71 /* FindLunchSpotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindLunchSpotViewController.xib; sourceTree = "<group>"; };
+		7F0466741C8C89BD00BAED71 /* FindLunchSpotViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindLunchSpotViewModel.swift; sourceTree = "<group>"; };
+		7F0466771C8C93E300BAED71 /* KMSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMSwizzle.h; sourceTree = "<group>"; };
+		7F0466781C8C93E300BAED71 /* KMSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMSwizzle.m; sourceTree = "<group>"; };
+		7F0466791C8C93E300BAED71 /* UINavigationController+KMNavigationBarTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+KMNavigationBarTransition.h"; sourceTree = "<group>"; };
+		7F04667A1C8C93E300BAED71 /* UINavigationController+KMNavigationBarTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+KMNavigationBarTransition.m"; sourceTree = "<group>"; };
+		7F04667B1C8C93E300BAED71 /* UIViewController+KMNavigationBarTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KMNavigationBarTransition.h"; sourceTree = "<group>"; };
+		7F04667C1C8C93E300BAED71 /* UIViewController+KMNavigationBarTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KMNavigationBarTransition.m"; sourceTree = "<group>"; };
+		7F2A212C1C914B5200A8D0EC /* UIColor+DetermineBrightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DetermineBrightness.h"; sourceTree = "<group>"; };
+		7F2A212D1C914B5200A8D0EC /* UIColor+DetermineBrightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DetermineBrightness.m"; sourceTree = "<group>"; };
+		7F2A212F1C9155F300A8D0EC /* FindLunchSpotWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindLunchSpotWireframe.swift; sourceTree = "<group>"; };
+		7F2A21311C91D32B00A8D0EC /* LunchDetailsWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchDetailsWireframe.swift; sourceTree = "<group>"; };
+		7F2A21331C91D49400A8D0EC /* LunchDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchDetailsViewModel.swift; sourceTree = "<group>"; };
+		7F2BCBA11CA3AA43001D5A76 /* LSCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCache.swift; sourceTree = "<group>"; };
+		7F3565C91C949EAB00B0081C /* ChangeLocationWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeLocationWireframe.swift; sourceTree = "<group>"; };
+		7F3565CD1C949F5300B0081C /* ChangeLocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeLocationViewModel.swift; sourceTree = "<group>"; };
+		7F3565CF1C96180500B0081C /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		7F3565D01C96180500B0081C /* LocationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
+		7F360B241C9F359F008096BD /* LunchSpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunchSpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F360B281C9F359F008096BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F360B2E1C9F5531008096BD /* FindLunchSpotViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindLunchSpotViewModelSpec.swift; sourceTree = "<group>"; };
+		7F360B321C9F8158008096BD /* LunchDetailsViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchDetailsViewModelSpec.swift; sourceTree = "<group>"; };
+		7F7190821C9A64EE00871D71 /* LSLaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSLaunchScreen.swift; sourceTree = "<group>"; };
+		7F7190841C9A650100871D71 /* LSLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSLaunchScreen.xib; sourceTree = "<group>"; };
+		7F7A62CC1C744F0B008DC162 /* LunchSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7A62CF1C744F0B008DC162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F7A62D61C744F0B008DC162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F7A62D91C744F0B008DC162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F7A62DB1C744F0B008DC162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F908F5C1C8EBFC50071BD61 /* TipsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsHeaderView.swift; sourceTree = "<group>"; };
+		7F908F5E1C8EBFD30071BD61 /* TipsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipsHeaderView.xib; sourceTree = "<group>"; };
+		7F929EFD1C967FB7008F689A /* PhotoSetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSetTableViewCell.swift; sourceTree = "<group>"; };
+		7F929EFE1C967FB7008F689A /* PhotoSetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoSetTableViewCell.xib; sourceTree = "<group>"; };
+		7F929F011C968489008F689A /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F929F021C968489008F689A /* ThumbnailCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailCollectionViewCell.xib; sourceTree = "<group>"; };
+		7F929F071C969698008F689A /* ThumbnailPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailPhoto.swift; sourceTree = "<group>"; };
+		7F9752851CA746CB006B135A /* UIImage+AvatarPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AvatarPlaceholder.h"; sourceTree = "<group>"; };
+		7F9752861CA746CB006B135A /* UIImage+AvatarPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AvatarPlaceholder.m"; sourceTree = "<group>"; };
+		7F9752881CA746DF006B135A /* ChangeLocationViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeLocationViewModelSpec.swift; sourceTree = "<group>"; };
+		7FBB99731C84268E00515D71 /* LunchDetailsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchDetailsHeaderView.swift; sourceTree = "<group>"; };
+		7FBB99771C842A1800515D71 /* LunchDetailsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LunchDetailsHeaderView.xib; sourceTree = "<group>"; };
+		7FBB99791C8434D400515D71 /* TipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipTableViewCell.swift; sourceTree = "<group>"; };
+		7FBB997A1C8434D400515D71 /* TipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipTableViewCell.xib; sourceTree = "<group>"; };
+		7FBB997D1C856B8200515D71 /* ChangeLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeLocationViewController.swift; sourceTree = "<group>"; };
+		7FBB997E1C856B8200515D71 /* ChangeLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeLocationViewController.xib; sourceTree = "<group>"; };
+		7FBB99891C857AEA00515D71 /* LunchMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchMenuViewController.swift; sourceTree = "<group>"; };
+		7FBB998A1C857AEA00515D71 /* LunchMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LunchMenuViewController.xib; sourceTree = "<group>"; };
+		7FBB998F1C85807800515D71 /* LunchMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchMapViewController.swift; sourceTree = "<group>"; };
+		7FBB99901C85807800515D71 /* LunchMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LunchMapViewController.xib; sourceTree = "<group>"; };
+		7FD692A71C7C43EF00852813 /* LunchDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchDetailsViewController.swift; sourceTree = "<group>"; };
+		7FD692A81C7C43EF00852813 /* LunchDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LunchDetailsViewController.xib; sourceTree = "<group>"; };
+		7FFCBB8D1C79341E007F9CD7 /* LunchSpot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LunchSpot-Bridging-Header.h"; sourceTree = "<group>"; };
+		7FFCBB931C793FF5007F9CD7 /* LSLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSLocationManager.swift; sourceTree = "<group>"; };
+		7FFCBB951C7A735B007F9CD7 /* LSFourSquareAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSFourSquareAPIService.swift; sourceTree = "<group>"; };
+		9C7D882792886F2AD9E96F94 /* Pods_LunchSpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchSpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CB8B6BE2805AAB92E0A6BA /* Pods_LunchSpotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchSpotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1CDA6C08B473BFD5CF7150 /* Pods-LunchSpot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchSpot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchSpot/Pods-LunchSpot.debug.xcconfig"; sourceTree = "<group>"; };
+		DC76A5D32ACEA73F3F06D4C1 /* Pods-LunchSpotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchSpotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchSpotTests/Pods-LunchSpotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3B1CBEDD9DF0FFB85F624FA /* Pods-LunchSpotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchSpotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchSpotTests/Pods-LunchSpotTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F360B211C9F359F008096BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC821C76B2B2C15ACE2F32E /* Pods_LunchSpotTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F7A62C91C744F0B008DC162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				129429A674CBAC3EA2C62442 /* Pods_LunchSpot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19925277C588F4CC0E2BF8D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC1CDA6C08B473BFD5CF7150 /* Pods-LunchSpot.debug.xcconfig */,
+				28C994E56007A9BB6EBA0423 /* Pods-LunchSpot.release.xcconfig */,
+				DC76A5D32ACEA73F3F06D4C1 /* Pods-LunchSpotTests.debug.xcconfig */,
+				E3B1CBEDD9DF0FFB85F624FA /* Pods-LunchSpotTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F0466731C8BBDEF00BAED71 /* FindLunchSpot */ = {
+			isa = PBXGroup;
+			children = (
+				7F04666F1C8BBDE900BAED71 /* FindLunchSpotViewController.swift */,
+				7F0466701C8BBDE900BAED71 /* FindLunchSpotViewController.xib */,
+				7F0466741C8C89BD00BAED71 /* FindLunchSpotViewModel.swift */,
+				7F2A212F1C9155F300A8D0EC /* FindLunchSpotWireframe.swift */,
+			);
+			name = FindLunchSpot;
+			sourceTree = "<group>";
+		};
+		7F0466761C8C93E300BAED71 /* KMNavigationBarTransition */ = {
+			isa = PBXGroup;
+			children = (
+				7F0466771C8C93E300BAED71 /* KMSwizzle.h */,
+				7F0466781C8C93E300BAED71 /* KMSwizzle.m */,
+				7F0466791C8C93E300BAED71 /* UINavigationController+KMNavigationBarTransition.h */,
+				7F04667A1C8C93E300BAED71 /* UINavigationController+KMNavigationBarTransition.m */,
+				7F04667B1C8C93E300BAED71 /* UIViewController+KMNavigationBarTransition.h */,
+				7F04667C1C8C93E300BAED71 /* UIViewController+KMNavigationBarTransition.m */,
+			);
+			path = KMNavigationBarTransition;
+			sourceTree = "<group>";
+		};
+		7F360B1E1C9F2963008096BD /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				7FBB99731C84268E00515D71 /* LunchDetailsHeaderView.swift */,
+				7FBB99771C842A1800515D71 /* LunchDetailsHeaderView.xib */,
+				7F908F5C1C8EBFC50071BD61 /* TipsHeaderView.swift */,
+				7F908F5E1C8EBFD30071BD61 /* TipsHeaderView.xib */,
+			);
+			name = Subviews;
+			sourceTree = "<group>";
+		};
+		7F360B1F1C9F29B4008096BD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7F9752851CA746CB006B135A /* UIImage+AvatarPlaceholder.h */,
+				7F9752861CA746CB006B135A /* UIImage+AvatarPlaceholder.m */,
+				7F2A212C1C914B5200A8D0EC /* UIColor+DetermineBrightness.h */,
+				7F2A212D1C914B5200A8D0EC /* UIColor+DetermineBrightness.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		7F360B251C9F359F008096BD /* LunchSpotTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F9752881CA746DF006B135A /* ChangeLocationViewModelSpec.swift */,
+				7F360B2E1C9F5531008096BD /* FindLunchSpotViewModelSpec.swift */,
+				7F360B321C9F8158008096BD /* LunchDetailsViewModelSpec.swift */,
+				7F360B281C9F359F008096BD /* Info.plist */,
+			);
+			path = LunchSpotTests;
+			sourceTree = "<group>";
+		};
+		7F7A62C31C744F0B008DC162 = {
+			isa = PBXGroup;
+			children = (
+				7F7A62CE1C744F0B008DC162 /* LunchSpot */,
+				7F360B251C9F359F008096BD /* LunchSpotTests */,
+				7F7A62CD1C744F0B008DC162 /* Products */,
+				19925277C588F4CC0E2BF8D9 /* Pods */,
+				F7643D69BA10C6591E7072F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F7A62CD1C744F0B008DC162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F7A62CC1C744F0B008DC162 /* LunchSpot.app */,
+				7F360B241C9F359F008096BD /* LunchSpotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F7A62CE1C744F0B008DC162 /* LunchSpot */ = {
+			isa = PBXGroup;
+			children = (
+				7F0466731C8BBDEF00BAED71 /* FindLunchSpot */,
+				7F86E6EA1C874C3900518A78 /* UpdateLocation */,
+				7F86E6EB1C874C4C00518A78 /* VenueDetails */,
+				7F86E6E91C874C2C00518A78 /* VenueMap */,
+				7F86E6E81C874C1D00518A78 /* LunchMenu */,
+				7F0466761C8C93E300BAED71 /* KMNavigationBarTransition */,
+				7F86E6ED1C874C6F00518A78 /* ReusableViews */,
+				7F86E6EC1C874C5D00518A78 /* Network */,
+				7F360B1F1C9F29B4008096BD /* Categories */,
+				7F2BCBA11CA3AA43001D5A76 /* LSCache.swift */,
+				7F7A62CF1C744F0B008DC162 /* AppDelegate.swift */,
+				7FFCBB8D1C79341E007F9CD7 /* LunchSpot-Bridging-Header.h */,
+				7F7A62D81C744F0B008DC162 /* LaunchScreen.storyboard */,
+				7F7A62D61C744F0B008DC162 /* Assets.xcassets */,
+				7F7A62DB1C744F0B008DC162 /* Info.plist */,
+			);
+			path = LunchSpot;
+			sourceTree = "<group>";
+		};
+		7F86E6E81C874C1D00518A78 /* LunchMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7FBB99891C857AEA00515D71 /* LunchMenuViewController.swift */,
+				7FBB998A1C857AEA00515D71 /* LunchMenuViewController.xib */,
+			);
+			name = LunchMenu;
+			sourceTree = "<group>";
+		};
+		7F86E6E91C874C2C00518A78 /* VenueMap */ = {
+			isa = PBXGroup;
+			children = (
+				7FBB998F1C85807800515D71 /* LunchMapViewController.swift */,
+				7FBB99901C85807800515D71 /* LunchMapViewController.xib */,
+			);
+			name = VenueMap;
+			sourceTree = "<group>";
+		};
+		7F86E6EA1C874C3900518A78 /* UpdateLocation */ = {
+			isa = PBXGroup;
+			children = (
+				7FBB997D1C856B8200515D71 /* ChangeLocationViewController.swift */,
+				7FBB997E1C856B8200515D71 /* ChangeLocationViewController.xib */,
+				7F3565C91C949EAB00B0081C /* ChangeLocationWireframe.swift */,
+				7F3565CD1C949F5300B0081C /* ChangeLocationViewModel.swift */,
+				7F3565CF1C96180500B0081C /* LocationTableViewCell.swift */,
+				7F3565D01C96180500B0081C /* LocationTableViewCell.xib */,
+			);
+			name = UpdateLocation;
+			sourceTree = "<group>";
+		};
+		7F86E6EB1C874C4C00518A78 /* VenueDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7F360B1E1C9F2963008096BD /* Subviews */,
+				7FD692A71C7C43EF00852813 /* LunchDetailsViewController.swift */,
+				7FD692A81C7C43EF00852813 /* LunchDetailsViewController.xib */,
+				7F2A21311C91D32B00A8D0EC /* LunchDetailsWireframe.swift */,
+				7F2A21331C91D49400A8D0EC /* LunchDetailsViewModel.swift */,
+				7F929EFD1C967FB7008F689A /* PhotoSetTableViewCell.swift */,
+				7F929EFE1C967FB7008F689A /* PhotoSetTableViewCell.xib */,
+				7F929F011C968489008F689A /* ThumbnailCollectionViewCell.swift */,
+				7F929F021C968489008F689A /* ThumbnailCollectionViewCell.xib */,
+				7F929F071C969698008F689A /* ThumbnailPhoto.swift */,
+			);
+			name = VenueDetails;
+			sourceTree = "<group>";
+		};
+		7F86E6EC1C874C5D00518A78 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7FFCBB931C793FF5007F9CD7 /* LSLocationManager.swift */,
+				7FFCBB951C7A735B007F9CD7 /* LSFourSquareAPIService.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		7F86E6ED1C874C6F00518A78 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				7F7190821C9A64EE00871D71 /* LSLaunchScreen.swift */,
+				7F7190841C9A650100871D71 /* LSLaunchScreen.xib */,
+				7FBB99791C8434D400515D71 /* TipTableViewCell.swift */,
+				7FBB997A1C8434D400515D71 /* TipTableViewCell.xib */,
+			);
+			name = ReusableViews;
+			sourceTree = "<group>";
+		};
+		F7643D69BA10C6591E7072F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C7D882792886F2AD9E96F94 /* Pods_LunchSpot.framework */,
+				C5CB8B6BE2805AAB92E0A6BA /* Pods_LunchSpotTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F360B231C9F359F008096BD /* LunchSpotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F360B2B1C9F359F008096BD /* Build configuration list for PBXNativeTarget "LunchSpotTests" */;
+			buildPhases = (
+				C90E516C2A89D6EF33EECE99 /* Check Pods Manifest.lock */,
+				7F360B201C9F359F008096BD /* Sources */,
+				7F360B211C9F359F008096BD /* Frameworks */,
+				7F360B221C9F359F008096BD /* Resources */,
+				482645FBEE3BFF018EE4CBE0 /* Embed Pods Frameworks */,
+				97E7BD5F1817E66E94E6CFF8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F360B2A1C9F359F008096BD /* PBXTargetDependency */,
+			);
+			name = LunchSpotTests;
+			productName = LunchSpotTests;
+			productReference = 7F360B241C9F359F008096BD /* LunchSpotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F7A62CB1C744F0B008DC162 /* LunchSpot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F7A62DE1C744F0B008DC162 /* Build configuration list for PBXNativeTarget "LunchSpot" */;
+			buildPhases = (
+				560ECB2D41E2FA3D89E243FC /* Check Pods Manifest.lock */,
+				7F7A62C81C744F0B008DC162 /* Sources */,
+				7F7A62C91C744F0B008DC162 /* Frameworks */,
+				7F7A62CA1C744F0B008DC162 /* Resources */,
+				07EFE8362E8BDBEB5AD19BCF /* Embed Pods Frameworks */,
+				F13C7A2F7FF7F690A3E1230B /* Copy Pods Resources */,
+				7F41FC991C993AF2005AFADC /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LunchSpot;
+			productName = LunchSpot;
+			productReference = 7F7A62CC1C744F0B008DC162 /* LunchSpot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F7A62C41C744F0B008DC162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "James Hung";
+				TargetAttributes = {
+					7F360B231C9F359F008096BD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7F7A62CB1C744F0B008DC162;
+					};
+					7F7A62CB1C744F0B008DC162 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7N39D43KZ2;
+					};
+				};
+			};
+			buildConfigurationList = 7F7A62C71C744F0B008DC162 /* Build configuration list for PBXProject "LunchSpot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F7A62C31C744F0B008DC162;
+			productRefGroup = 7F7A62CD1C744F0B008DC162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F7A62CB1C744F0B008DC162 /* LunchSpot */,
+				7F360B231C9F359F008096BD /* LunchSpotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F360B221C9F359F008096BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F7A62CA1C744F0B008DC162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F929F001C967FB7008F689A /* PhotoSetTableViewCell.xib in Resources */,
+				7FBB99921C85807800515D71 /* LunchMapViewController.xib in Resources */,
+				7FBB997C1C8434D400515D71 /* TipTableViewCell.xib in Resources */,
+				7F3565D21C96180500B0081C /* LocationTableViewCell.xib in Resources */,
+				7FD692AA1C7C43EF00852813 /* LunchDetailsViewController.xib in Resources */,
+				7F7A62DA1C744F0B008DC162 /* LaunchScreen.storyboard in Resources */,
+				7F7A62D71C744F0B008DC162 /* Assets.xcassets in Resources */,
+				7F0466721C8BBDE900BAED71 /* FindLunchSpotViewController.xib in Resources */,
+				7F929F041C968489008F689A /* ThumbnailCollectionViewCell.xib in Resources */,
+				7FBB99801C856B8200515D71 /* ChangeLocationViewController.xib in Resources */,
+				7FBB998C1C857AEA00515D71 /* LunchMenuViewController.xib in Resources */,
+				7FBB99781C842A1800515D71 /* LunchDetailsHeaderView.xib in Resources */,
+				7F908F5F1C8EBFD30071BD61 /* TipsHeaderView.xib in Resources */,
+				7F7190851C9A650100871D71 /* LSLaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07EFE8362E8BDBEB5AD19BCF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchSpot/Pods-LunchSpot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		482645FBEE3BFF018EE4CBE0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchSpotTests/Pods-LunchSpotTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		560ECB2D41E2FA3D89E243FC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F41FC991C993AF2005AFADC /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 7cbfc62d741fab0b0610a1465ea6fcd33de3b20d 9215064212ef7967268316ffd75eddd5982be929738270ed07ac61bf0b4dae3b";
+		};
+		97E7BD5F1817E66E94E6CFF8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchSpotTests/Pods-LunchSpotTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90E516C2A89D6EF33EECE99 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F13C7A2F7FF7F690A3E1230B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchSpot/Pods-LunchSpot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F360B201C9F359F008096BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F360B331C9F8158008096BD /* LunchDetailsViewModelSpec.swift in Sources */,
+				7F9752891CA746DF006B135A /* ChangeLocationViewModelSpec.swift in Sources */,
+				7F360B2F1C9F5531008096BD /* FindLunchSpotViewModelSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F7A62C81C744F0B008DC162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F929F081C969698008F689A /* ThumbnailPhoto.swift in Sources */,
+				7F929F031C968489008F689A /* ThumbnailCollectionViewCell.swift in Sources */,
+				7F3565CA1C949EAB00B0081C /* ChangeLocationWireframe.swift in Sources */,
+				7F04667D1C8C93E300BAED71 /* KMSwizzle.m in Sources */,
+				7F2A212E1C914B5200A8D0EC /* UIColor+DetermineBrightness.m in Sources */,
+				7FBB99911C85807800515D71 /* LunchMapViewController.swift in Sources */,
+				7FBB997F1C856B8200515D71 /* ChangeLocationViewController.swift in Sources */,
+				7F0466751C8C89BD00BAED71 /* FindLunchSpotViewModel.swift in Sources */,
+				7FBB997B1C8434D400515D71 /* TipTableViewCell.swift in Sources */,
+				7FFCBB961C7A735B007F9CD7 /* LSFourSquareAPIService.swift in Sources */,
+				7F2A21341C91D49400A8D0EC /* LunchDetailsViewModel.swift in Sources */,
+				7F2A21321C91D32B00A8D0EC /* LunchDetailsWireframe.swift in Sources */,
+				7F3565CE1C949F5300B0081C /* ChangeLocationViewModel.swift in Sources */,
+				7F929EFF1C967FB7008F689A /* PhotoSetTableViewCell.swift in Sources */,
+				7FFCBB941C793FF5007F9CD7 /* LSLocationManager.swift in Sources */,
+				7F7190831C9A64EE00871D71 /* LSLaunchScreen.swift in Sources */,
+				7F9752871CA746CB006B135A /* UIImage+AvatarPlaceholder.m in Sources */,
+				7F7A62D01C744F0B008DC162 /* AppDelegate.swift in Sources */,
+				7F3565D11C96180500B0081C /* LocationTableViewCell.swift in Sources */,
+				7F04667E1C8C93E300BAED71 /* UINavigationController+KMNavigationBarTransition.m in Sources */,
+				7F0466711C8BBDE900BAED71 /* FindLunchSpotViewController.swift in Sources */,
+				7FD692A91C7C43EF00852813 /* LunchDetailsViewController.swift in Sources */,
+				7FBB99741C84268E00515D71 /* LunchDetailsHeaderView.swift in Sources */,
+				7F2A21301C9155F300A8D0EC /* FindLunchSpotWireframe.swift in Sources */,
+				7F04667F1C8C93E300BAED71 /* UIViewController+KMNavigationBarTransition.m in Sources */,
+				7FBB998B1C857AEA00515D71 /* LunchMenuViewController.swift in Sources */,
+				7F908F5D1C8EBFC50071BD61 /* TipsHeaderView.swift in Sources */,
+				7F2BCBA21CA3AA43001D5A76 /* LSCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F360B2A1C9F359F008096BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F7A62CB1C744F0B008DC162 /* LunchSpot */;
+			targetProxy = 7F360B291C9F359F008096BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F7A62D81C744F0B008DC162 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F7A62D91C744F0B008DC162 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F360B2C1C9F359F008096BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC76A5D32ACEA73F3F06D4C1 /* Pods-LunchSpotTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = LunchSpotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JamesHung.LunchSpotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LunchSpot.app/LunchSpot";
+			};
+			name = Debug;
+		};
+		7F360B2D1C9F359F008096BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B1CBEDD9DF0FFB85F624FA /* Pods-LunchSpotTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LunchSpotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JamesHung.LunchSpotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LunchSpot.app/LunchSpot";
+			};
+			name = Release;
+		};
+		7F7A62DC1C744F0B008DC162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F7A62DD1C744F0B008DC162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F7A62DF1C744F0B008DC162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC1CDA6C08B473BFD5CF7150 /* Pods-LunchSpot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James Hung (QS5Q9NT3D5)";
+				INFOPLIST_FILE = LunchSpot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LunchSpot/LunchSpot-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F7A62E01C744F0B008DC162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C994E56007A9BB6EBA0423 /* Pods-LunchSpot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LunchSpot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LunchSpot/LunchSpot-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F360B2B1C9F359F008096BD /* Build configuration list for PBXNativeTarget "LunchSpotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F360B2C1C9F359F008096BD /* Debug */,
+				7F360B2D1C9F359F008096BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F7A62C71C744F0B008DC162 /* Build configuration list for PBXProject "LunchSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7A62DC1C744F0B008DC162 /* Debug */,
+				7F7A62DD1C744F0B008DC162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F7A62DE1C744F0B008DC162 /* Build configuration list for PBXNativeTarget "LunchSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7A62DF1C744F0B008DC162 /* Debug */,
+				7F7A62E01C744F0B008DC162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F7A62C41C744F0B008DC162 /* Project object */;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ThumbnailCollectionViewCell" customModule="LunchSpot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="huc-aU-6fl">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="huc-aU-6fl" secondAttribute="bottom" id="I0Z-bv-oOg"/>
+                <constraint firstItem="huc-aU-6fl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MMi-bi-3Pi"/>
+                <constraint firstAttribute="trailing" secondItem="huc-aU-6fl" secondAttribute="trailing" id="roI-s6-NMY"/>
+                <constraint firstItem="huc-aU-6fl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sPn-dy-sUA"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="huc-aU-6fl" id="3c5-vN-N65"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

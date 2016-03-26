@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="TipTableViewCell" customModule="LunchSpot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Wi-Ou-OHe">
+                        <rect key="frame" x="15" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="cfh-Sm-U2l"/>
+                            <constraint firstAttribute="width" constant="40" id="evh-WW-W6J"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;I love the Al Pastor Tacos, Polio Asado and Hamburgesa&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XD-xz-41q" userLabel="Tip Text">
+                        <rect key="frame" x="65" y="15" width="240" height="36"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Pete Jackson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECH-TJ-ndB" userLabel="Author Name">
+                        <rect key="frame" x="65" y="54" width="70.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="2 weeks ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2C-Fh-tFe" userLabel="Time Ago">
+                        <rect key="frame" x="140.5" y="54" width="164.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6XD-xz-41q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="28K-1y-jAw"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ECH-TJ-ndB" secondAttribute="bottom" constant="15" id="C6h-Ik-vK0"/>
+                    <constraint firstItem="5Wi-Ou-OHe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ENn-Wz-4gf"/>
+                    <constraint firstItem="b2C-Fh-tFe" firstAttribute="centerY" secondItem="ECH-TJ-ndB" secondAttribute="centerY" id="K0R-fi-npX"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5Wi-Ou-OHe" secondAttribute="bottom" constant="15" id="Txt-6m-YQp"/>
+                    <constraint firstItem="ECH-TJ-ndB" firstAttribute="top" secondItem="6XD-xz-41q" secondAttribute="bottom" constant="3" id="YmJ-Ms-jqo"/>
+                    <constraint firstAttribute="trailing" secondItem="b2C-Fh-tFe" secondAttribute="trailing" constant="15" id="ZOD-Wz-8qt"/>
+                    <constraint firstItem="5Wi-Ou-OHe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bR4-1p-DvS"/>
+                    <constraint firstItem="ECH-TJ-ndB" firstAttribute="leading" secondItem="6XD-xz-41q" secondAttribute="leading" id="ej0-PW-bHf"/>
+                    <constraint firstItem="b2C-Fh-tFe" firstAttribute="leading" secondItem="ECH-TJ-ndB" secondAttribute="trailing" constant="5" id="hXr-7Y-wew"/>
+                    <constraint firstItem="6XD-xz-41q" firstAttribute="leading" secondItem="5Wi-Ou-OHe" secondAttribute="trailing" constant="10" id="n4J-lB-wjM"/>
+                    <constraint firstAttribute="trailing" secondItem="6XD-xz-41q" secondAttribute="trailing" constant="15" id="vIQ-Lb-qwh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLabel" destination="ECH-TJ-ndB" id="z7y-pK-TBZ"/>
+                <outlet property="avatarImageView" destination="5Wi-Ou-OHe" id="vea-1c-rg5"/>
+                <outlet property="timeAgoLabel" destination="b2C-Fh-tFe" id="SD8-Wp-glb"/>
+                <outlet property="tipLabel" destination="6XD-xz-41q" id="oyf-pF-DIb"/>
+            </connections>
+            <point key="canvasLocation" x="-22" y="197"/>
+        </tableViewCell>
+    </objects>
+</document>

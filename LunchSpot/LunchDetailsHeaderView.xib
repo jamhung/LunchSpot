@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="TdB-At-Bdd" customClass="LunchDetailsHeaderView" customModule="LunchSpot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="434"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfW-Db-7vu" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="434"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf4-AC-SyR" userLabel="Background View">
+                            <rect key="frame" x="0.0" y="-300" width="375" height="734"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOB-W3-YIy">
+                            <rect key="frame" x="112" y="0.0" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="cya-Qu-nVd"/>
+                                <constraint firstAttribute="height" constant="150" id="nDh-DE-KOB"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Don Pisto's" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6q-rh-hJB" userLabel="Venue Title">
+                            <rect key="frame" x="15" y="165" width="345" height="41"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="510 Union St. San Francisco, CA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhe-3A-U3H" userLabel="Venue Address">
+                            <rect key="frame" x="15" y="206" width="345" height="173"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiH-1H-0eE" userLabel="Menu Button">
+                            <rect key="frame" x="285" y="384" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="qYt-Uw-5HF"/>
+                                <constraint firstAttribute="height" constant="40" id="vNe-Rl-0Qo"/>
+                            </constraints>
+                            <state key="normal" image="Menu Button"/>
+                            <connections>
+                                <action selector="menuButtonPressed:" destination="TdB-At-Bdd" eventType="touchUpInside" id="fbI-qU-PYn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcU-Mg-6hb" userLabel="Call Button">
+                            <rect key="frame" x="50" y="384" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="PNB-H3-4qg"/>
+                                <constraint firstAttribute="height" constant="40" id="anv-vH-ecD"/>
+                            </constraints>
+                            <state key="normal" image="Call Button"/>
+                            <connections>
+                                <action selector="callButtonPressed:" destination="TdB-At-Bdd" eventType="touchUpInside" id="IA0-8r-Hj2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swq-7j-67T" userLabel="Map Button">
+                            <rect key="frame" x="167.5" y="384" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="RRq-X8-NyA"/>
+                                <constraint firstAttribute="width" constant="40" id="iGq-5g-Ao0"/>
+                            </constraints>
+                            <state key="normal" image="Map Button"/>
+                            <connections>
+                                <action selector="mapButtonPressed:" destination="TdB-At-Bdd" eventType="touchUpInside" id="ReY-OF-9LN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="yhe-3A-U3H" firstAttribute="leading" secondItem="cfW-Db-7vu" secondAttribute="leading" constant="15" id="BBC-De-giV"/>
+                        <constraint firstAttribute="trailing" secondItem="HiH-1H-0eE" secondAttribute="trailing" constant="50" id="CBk-xM-pCn"/>
+                        <constraint firstAttribute="trailing" secondItem="yhe-3A-U3H" secondAttribute="trailing" constant="15" id="Chp-bW-r84"/>
+                        <constraint firstItem="HiH-1H-0eE" firstAttribute="centerY" secondItem="swq-7j-67T" secondAttribute="centerY" id="Gk9-Hw-yfn"/>
+                        <constraint firstItem="XOB-W3-YIy" firstAttribute="top" secondItem="cfW-Db-7vu" secondAttribute="top" id="HgP-7Z-a7v"/>
+                        <constraint firstItem="I6q-rh-hJB" firstAttribute="leading" secondItem="cfW-Db-7vu" secondAttribute="leading" constant="15" id="JNS-nt-Ye3"/>
+                        <constraint firstAttribute="bottom" secondItem="Xf4-AC-SyR" secondAttribute="bottom" id="MPA-BB-Fnq"/>
+                        <constraint firstItem="VcU-Mg-6hb" firstAttribute="leading" secondItem="cfW-Db-7vu" secondAttribute="leading" constant="50" id="P99-4U-GeK"/>
+                        <constraint firstItem="VcU-Mg-6hb" firstAttribute="top" secondItem="yhe-3A-U3H" secondAttribute="bottom" constant="5" id="PWJ-mQ-IQo"/>
+                        <constraint firstAttribute="trailing" secondItem="Xf4-AC-SyR" secondAttribute="trailing" id="RY5-eR-C81"/>
+                        <constraint firstAttribute="trailing" secondItem="I6q-rh-hJB" secondAttribute="trailing" constant="15" id="Y0g-Yv-IRb"/>
+                        <constraint firstItem="yhe-3A-U3H" firstAttribute="top" secondItem="I6q-rh-hJB" secondAttribute="bottom" id="g1I-ae-K8Z"/>
+                        <constraint firstItem="I6q-rh-hJB" firstAttribute="top" secondItem="XOB-W3-YIy" secondAttribute="bottom" constant="15" id="jTI-ce-THa"/>
+                        <constraint firstAttribute="bottom" secondItem="VcU-Mg-6hb" secondAttribute="bottom" constant="10" id="kI1-en-Lh5"/>
+                        <constraint firstItem="Xf4-AC-SyR" firstAttribute="top" secondItem="cfW-Db-7vu" secondAttribute="top" constant="-300" id="pT9-Ke-1OC"/>
+                        <constraint firstItem="swq-7j-67T" firstAttribute="centerY" secondItem="VcU-Mg-6hb" secondAttribute="centerY" id="ugS-Mh-0yC"/>
+                        <constraint firstItem="XOB-W3-YIy" firstAttribute="centerX" secondItem="cfW-Db-7vu" secondAttribute="centerX" id="vis-wL-tPw"/>
+                        <constraint firstItem="swq-7j-67T" firstAttribute="centerX" secondItem="cfW-Db-7vu" secondAttribute="centerX" id="y4R-d2-QvK"/>
+                        <constraint firstItem="Xf4-AC-SyR" firstAttribute="leading" secondItem="cfW-Db-7vu" secondAttribute="leading" id="ztZ-sy-Hhf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cfW-Db-7vu" firstAttribute="leading" secondItem="TdB-At-Bdd" secondAttribute="leading" id="UP2-dq-nZN"/>
+                <constraint firstAttribute="trailing" secondItem="cfW-Db-7vu" secondAttribute="trailing" id="mbO-sR-gh3"/>
+                <constraint firstItem="cfW-Db-7vu" firstAttribute="top" secondItem="TdB-At-Bdd" secondAttribute="top" id="trt-vD-xYg"/>
+                <constraint firstAttribute="bottom" secondItem="cfW-Db-7vu" secondAttribute="bottom" id="vK1-In-eS2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarTopConstraint" destination="HgP-7Z-a7v" id="efW-Ww-dyg"/>
+                <outlet property="backgroundView" destination="Xf4-AC-SyR" id="oBP-jO-coR"/>
+                <outlet property="callButton" destination="VcU-Mg-6hb" id="uwO-Y2-TXw"/>
+                <outlet property="contentViewBottomConstraint" destination="vK1-In-eS2" id="Tbb-AH-cGs"/>
+                <outlet property="contentViewTopConstraint" destination="trt-vD-xYg" id="8kd-a0-xEq"/>
+                <outlet property="mapButton" destination="swq-7j-67T" id="qi3-5q-c4R"/>
+                <outlet property="menuButton" destination="HiH-1H-0eE" id="49S-ng-GHl"/>
+                <outlet property="venueAddressLabel" destination="yhe-3A-U3H" id="rdT-11-hza"/>
+                <outlet property="venueAvatarImageView" destination="XOB-W3-YIy" id="OXe-PP-iPx"/>
+                <outlet property="venueTitleLabel" destination="I6q-rh-hJB" id="CO9-ZF-04g"/>
+            </connections>
+            <point key="canvasLocation" x="60.5" y="477"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Call Button" width="24" height="24"/>
+        <image name="Map Button" width="17" height="22"/>
+        <image name="Menu Button" width="22" height="24"/>
+    </resources>
+</document>

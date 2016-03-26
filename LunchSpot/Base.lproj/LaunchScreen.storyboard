@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="6Qf-E8-qKZ">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vPa-Ib-0F7">
+                                <rect key="frame" x="157" y="220" width="60" height="60"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LunchSpot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUi-In-yvl">
+                                <rect key="frame" x="80" y="295" width="213.5" height="61.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vUi-In-yvl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GSQ-Hm-vLw"/>
+                            <constraint firstItem="vUi-In-yvl" firstAttribute="top" secondItem="vPa-Ib-0F7" secondAttribute="bottom" constant="15" id="Iho-ZM-57y"/>
+                            <constraint firstAttribute="trailing" secondItem="6Qf-E8-qKZ" secondAttribute="trailing" id="Nq8-kk-Rr5"/>
+                            <constraint firstItem="6Qf-E8-qKZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="SpV-lo-xHB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="6Qf-E8-qKZ" secondAttribute="bottom" id="ZKU-Ii-Ol6"/>
+                            <constraint firstItem="vPa-Ib-0F7" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="220" id="gKJ-zT-5lw"/>
+                            <constraint firstItem="vPa-Ib-0F7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nN0-x4-8Lp"/>
+                            <constraint firstItem="6Qf-E8-qKZ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="v0B-Cs-Rl5"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="logo" width="60" height="60"/>
+    </resources>
+</document>

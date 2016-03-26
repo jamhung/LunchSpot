@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (3.2.0)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - DateTools (1.7.0)
+  - Fabric (1.6.7)
+  - FLAnimatedImage (1.0.12)
+  - Nimble (3.2.0)
+  - NYTPhotoViewer (1.1.0):
+    - NYTPhotoViewer/AnimatedGifSupport (= 1.1.0)
+    - NYTPhotoViewer/Core (= 1.1.0)
+  - NYTPhotoViewer/AnimatedGifSupport (1.1.0):
+    - FLAnimatedImage (~> 1.0.8)
+    - NYTPhotoViewer/Core
+  - NYTPhotoViewer/Core (1.1.0)
+  - Quick (0.9.1)
+  - Reveal-iOS-SDK (1.6.2)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - ChameleonFramework/Swift
+  - Crashlytics
+  - DateTools
+  - Fabric
+  - Nimble
+  - NYTPhotoViewer (~> 1.1.0)
+  - Quick
+  - Reveal-iOS-SDK
+  - SDWebImage (~> 3.7)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 42bdb102d2624b143c07850ebdc1537d5b6579b6
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  NYTPhotoViewer: e80e8767f3780d2df37c6f72cbab15d6c7232911
+  Quick: a5221fc21788b6aeda934805e68b061839bc3165
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
